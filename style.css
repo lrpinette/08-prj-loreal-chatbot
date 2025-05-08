@@ -22,12 +22,23 @@ body {
 .site-header {
   text-align: center;
   padding-top: 50px;
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+  padding-bottom: 20px;
 }
 
 .site-title {
   font-size: 22px;
   font-weight: 500;
   margin-bottom: 10px;
+}
+
+/* logo */
+.site-logo {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 150px;
+  height: auto;
 }
 
 /* chat window */
@@ -37,27 +48,54 @@ body {
 
 .chat-window {
   height: 360px;
-  border: 1px solid #000;
+  border: 1px solid #ccc;
   padding: 20px;
   font-size: 18px;
   line-height: 1.5;
   overflow-y: auto;
-  background: #fafafa;
+  background: #f4f4f4; /* Light gray background */
   white-space: pre-line;
+}
+
+/* General chat window styling */
+#chatWindow {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  height: 400px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* messages */
 .msg {
   margin-bottom: 14px;
   line-height: 1.5;
+  max-width: 70%;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 14px;
 }
 
+/* User message bubble */
 .msg.user {
-  color: #000;
+  color: #0f5132; /* Green text for user messages */
+  align-self: flex-end;
+  background-color: #d1e7dd;
+  text-align: right;
 }
 
+/* Assistant message bubble */
 .msg.ai {
-  color: #666666;
+  color: #41464b; /* Gray text for AI messages */
+  align-self: flex-start;
+  background-color: #e2e3e5;
+  text-align: left;
 }
 
 /* input row */
@@ -72,18 +110,19 @@ body {
   padding: 12px;
   border: 1px solid #ccc;
   font-size: 18px;
+  background-color: #fff; /* White input background */
 }
 
 .chat-form input:focus {
-  outline: 2px solid #000;
+  outline: 2px solid #000; /* Black focus outline */
   outline-offset: 2px;
 }
 
 .chat-form button {
   font-size: 18px;
-  background: #000;
-  color: #fff;
-  border: none;
+  background: #000; /* Black background */
+  color: #fff; /* White text */
+  border: none; /* Remove border */
   padding: 12px;
   width: 48px;
   height: 48px;
@@ -99,11 +138,11 @@ body {
 }
 
 .chat-form button:hover {
-  background: #666666;
+  background: #333; /* Darker black hover */
 }
 
 .chat-form button:focus {
-  outline: 2px solid #000;
+  outline: 2px solid #000; /* Black focus outline */
   outline-offset: 2px;
 }
 
@@ -125,7 +164,7 @@ body {
   margin: 60px 0 40px;
   text-align: center;
   font-size: 14px;
-  color: #666;
+  color: #666; /* Gray text */
 }
 
 .site-footer nav {
@@ -134,10 +173,10 @@ body {
 
 .site-footer a {
   margin: 0 8px;
-  color: #000;
+  color: #000; /* Black links */
   text-decoration: none;
 }
 
 .site-footer a:hover {
-  color: #666666;
+  color: #333; /* Darker black hover */
 }
