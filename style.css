@@ -180,3 +180,11 @@ body {
 .site-footer a:hover {
   color: #333; /* Darker black hover */
 }
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+  .site-logo {
+    width: 100px; /* Adjust the width to make the logo smaller */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
